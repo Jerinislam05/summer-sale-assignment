@@ -39,58 +39,58 @@
                 <h2 class="text-xl font-bold">Products</h2>
                 <div class="flex">
                     <!-- card-1 -->
-                <div class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
+                <div id="prod1-amount" class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
                     <figure><img src="./images/prod1.png" alt="spoon" /></figure>
                     <div class="card-body flex items-center justify-center">
-                      <h2 class="card-title">Spoon</h2>
-                      <p> <span>40.00</span> TK. </p>
+                      <h2 id="prod1-name">Spoon</h2>
+                      <p> <span id="price">70.00</span> TK. </p>
                       
                       </div>
                     </div>
                 <!-- card-2 -->
-                    <div class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
+                    <div id="prod2-amount" class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
                         <figure><img src="./images/prod2.png" alt="spoon" /></figure>
                         <div class="card-body flex items-center justify-center">
-                          <h2 class="card-title">Cutting Board</h2>
-                          <p> <span>40.00</span> TK. </p>
+                          <h2 id="prod2-name">Cutting Board</h2>
+                          <p> <span id="price-second">100.00</span> TK. </p>
                           
                           </div>
                         </div>
                 <!-- card-3 -->
-                        <div class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
+                        <div id="prod3-amount" class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
                             <figure><img src="./images/prod3.png" alt="spoon" /></figure>
                             <div class="card-body flex items-center justify-center">
-                              <h2 class="card-title">Cocker</h2>
-                              <p> <span>40.00</span> TK. </p>
+                              <h2 id="prod3-name">Cocker</h2>
+                              <p> <span id="price-third">180.00</span> TK. </p>
                               
                               </div>
                         </div>
                 </div>
                 <div class="flex">
                     <!-- card-4 -->
-                <div class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
+                <div id="prod4-amount" class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
                     <figure><img src="./images/prod4.png" alt="spoon" /></figure>
                     <div class="card-body flex items-center justify-center">
-                      <h2 class="card-title">Cap</h2>
-                      <p> <span>40.00</span> TK. </p>
+                      <h2>Cap</h2>
+                      <p> <span id="price-forth">50.00</span> TK. </p>
                       
                       </div>
                     </div>
                 <!-- card-5 -->
-                    <div class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
+                    <div id="prod5-amount" class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
                         <figure><img src="./images/prod5.png" alt="spoon" /></figure>
                         <div class="card-body flex items-center justify-center">
-                          <h2 class="card-title">T-shirt</h2>
-                          <p> <span>40.00</span> TK. </p>
+                          <h2>T-shirt</h2>
+                          <p> <span id="price-fifth">200.00</span> TK. </p>
                           
                           </div>
                         </div>
                 <!-- card-6 -->
-                        <div class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
+                        <div id="prod6-amount" class="card card-compact w-80 bg-base-100 shadow-xl mt-4 mr-2">
                             <figure><img src="./images/prod6.png" alt="spoon" /></figure>
                             <div class="card-body flex items-center justify-center">
-                              <h2 class="card-title">Shoe</h2>
-                              <p> <span>40.00</span> TK. </p>
+                              <h2>Shoe</h2>
+                              <p> <span id="price-sixth">600.00</span> TK. </p>
                               
                               </div>
                         </div>
@@ -107,30 +107,34 @@
                       class="rounded p-2 -mr-2"
                       type="text"
                       name=""
-                      id="coupon"
+                      id="coupon-input"
                       placeholder="Coupon Code"
                     />
-                    <input
-                      class="bg-pink-500 text-white p-2 px-4 font-semibold rounded"
-                      type="button"
-                      value="Apply"
-                      id="submit"
-                    />
+                    <button id="btn-apply"
+                    class="bg-pink-500 text-white p-2 px-4 font-semibold rounded"
+                    type="button"
+                    value="Apply">Apply</button>
                   </div>
             </div>
             <div>
-                <div>
+                <ol class="list-decimal ml-12" id="selected-products">
+                    
+                </ol>
+            </div>
+            <div>
+                <div class="bg-white p-6 rounded-lg flex-col items-center">
                     <ul></ul>
                     <hr>
-                    <p>Total Price: <span>00</span>tk</p>
-                    <p>Discount: <span>00</span>tk</p>
-                    <p>Total: <span>00</span>tk</p>
+                    <p>Total Price: <span id="add-price">00</span>tk</p>
+                    <p>Discount: <span id="add-discount">00</span>tk</p>
+                    <p>Total: <span id="total-price">00</span>tk</p>
                     <hr>
-                    <input type="button" value="">
+                    <button id="btn-purchase" class="bg-pink-500 text-white w-full font-bold" type="button" value="Purchase" type="submit">Purchase</button>
                 </div>
             </div>
         </div>
        </div>
     </main>
+    <script src="./cart.js"></script>
   </body>
 </html>

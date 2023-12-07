@@ -11,7 +11,6 @@ document.getElementById('prod1-amount').addEventListener('click', function(){
     const addPriceElement = document.getElementById('add-price');
     const addPrice = addPriceElement.innerText;
     const addPriceNum = parseFloat(addPrice);
-    console.log(addPriceNum);
     addPriceElement.innerText = prodNum;
 
 });
@@ -50,7 +49,57 @@ document.getElementById('prod3-amount').addEventListener('click', function() {
     const prod3NumString = parseFloat(prod3Num);
     const totalPrice = addPriceNum + prod3NumString;
     addPriceElement.innerText = totalPrice;
-    console.log(prod3NumString);
+});
+
+document.getElementById('prod4-amount').addEventListener('click',function(){
+    const prodName = document.getElementById('prod4-name');
+    const olElement = document.getElementById('selected-products');
+    const liElement = document.createElement('li');
+    liElement.textContent = prodName.innerText;
+    olElement.appendChild(liElement);
+
+    const addPriceElement = document.getElementById('add-price');
+    const addPrice = addPriceElement.innerText;
+    const addPriceNum = parseFloat(addPrice);
+    const prodPrice4 = document.getElementById('price-forth');
+    const prod4NumString = prodPrice4.innerText;
+    const prod4Num = parseFloat(prod4NumString);
+    const totalPrice = addPriceNum + prod4Num;
+    addPriceElement.innerText = totalPrice;
+});
+
+document.getElementById('prod5-amount').addEventListener('click',function(){
+    const prodName = document.getElementById('prod5-name');
+    const olElement = document.getElementById('selected-products');
+    const liElement = document.createElement('li');
+    liElement.textContent = prodName.innerText;
+    olElement.appendChild(liElement);
+
+    const addPriceElement = document.getElementById('add-price');
+    const addPrice = addPriceElement.innerText;
+    const addPriceNum = parseFloat(addPrice);
+    const prodPrice5 = document.getElementById('price-fifth');
+    const prod5NumString = prodPrice5.innerText;
+    const prod5Num = parseFloat(prod5NumString);
+    const totalPrice = addPriceNum + prod5Num;
+    addPriceElement.innerText = totalPrice;
+});
+
+document.getElementById('prod6-amount').addEventListener('click',function(){
+    const prodName = document.getElementById('prod6-name');
+    const olElement = document.getElementById('selected-products');
+    const liElement = document.createElement('li');
+    liElement.textContent = prodName.innerText;
+    olElement.appendChild(liElement);
+
+    const addPriceElement = document.getElementById('add-price');
+    const addPrice = addPriceElement.innerText;
+    const addPriceNum = parseFloat(addPrice);
+    const prodPrice6 = document.getElementById('price-sixth');
+    const prod6NumString = prodPrice6.innerText;
+    const prod6Num = parseFloat(prod6NumString);
+    const totalPrice = addPriceNum + prod6Num;
+    addPriceElement.innerText = totalPrice;
 });
 
 document.getElementById('btn-apply').addEventListener('click', function(){

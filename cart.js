@@ -11,7 +11,8 @@ document.getElementById('prod1-amount').addEventListener('click', function(){
     const addPriceElement = document.getElementById('add-price');
     const addPrice = addPriceElement.innerText;
     const addPriceNum = parseFloat(addPrice);
-    addPriceElement.innerText = prodNum;
+    const totalPrice = prodNum + addPriceNum;
+    addPriceElement.innerText = totalPrice;
 
 });
 
@@ -28,7 +29,6 @@ document.getElementById('prod2-amount').addEventListener('click', function(){
     const prodPrice2 = document.getElementById('price-second');
     const prod2Num = prodPrice2.innerText;
     const prod2NumString = parseFloat(prod2Num);
-    console.log(prod2NumString);
     const totalPrice = addPriceNum + prod2NumString;
     addPriceElement.innerText = totalPrice;
 });
